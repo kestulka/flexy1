@@ -1,0 +1,54 @@
+.item1 {
+    grid-area: vienas;
+    background-color: rgb(230, 72, 99);
+}
+.item2 {
+    grid-area: du;
+    background-color: rgb(103, 3, 242);
+}
+.item3{
+    grid-area: trys;
+    background-color: rgb(159, 124, 241);
+}
+.item4{
+    grid-area: keturi;
+    background-color: rgb(65, 225, 239);
+}
+.item5{
+    grid-area: penki;
+    background-color: rgb(213, 110, 222);
+}
+.item6{
+    grid-area: sesi;
+    background-color: rgb(230, 72, 99);
+}
+.item7{
+    grid-area: septyni;
+    background-color: rgb(103, 3, 242);
+}
+.item8{
+    grid-area: astuoni;
+    background-color: rgb(159, 124, 241);
+}
+.item9{
+    grid-area: devyni;
+    background-color: rgb(103, 3, 242);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    'vienas vienas vienas'
+    'du trys keturi'
+    'du penki penki'
+    'sesi sesi septyni'
+    'astuoni astuoni astuoni';
+}
+.container div{
+    height: 10vh;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
