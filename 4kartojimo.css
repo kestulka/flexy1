@@ -1,0 +1,65 @@
+.item1{
+    grid-area: pirmas;
+    background-color: firebrick;
+}
+.item2{
+    grid-area: antras;
+    background-color: rgb(155, 27, 127);
+}
+.item3{
+    grid-area: trecias;
+    background-color: rgb(219, 125, 48);
+}
+.item4{
+    grid-area: ketvirtas;
+    background-color: rgb(234, 194, 19);
+}
+.item5{
+    grid-area: penktas;
+    background-color: rgb(60, 102, 0);
+}
+.item6{
+    grid-area: sestas;
+    background-color: rgb(4, 81, 72);
+}
+.item7{
+    grid-area: septintas;
+    background-color: rgb(72, 121, 42);
+}
+.item8{
+    grid-area: astuntas;
+    background-color: rgb(10, 78, 14);
+}
+.item9{
+    grid-area: devintas;
+    background-color: rgb(29, 154, 163);
+}
+.item10{
+    grid-area: desimtas;
+    background-color: rgb(33, 194, 127);
+}
+.item11{
+    grid-area: vienuoliktas;
+    background-color: rgb(74, 25, 122);
+}
+.item12{
+    grid-area: dvyliktas;
+    background-color: rgb(178, 5, 5);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 13vh);
+    grid-gap: 3px;
+    grid-template-areas:
+    'pirmas antras antras trecias ketvirtas'
+    'penktas sestas septintas trecias ketvirtas'
+    'astuntas astuntas astuntas astuntas ketvirtas'
+    'devintas devintas desimtas vienuoliktas ketvirtas'
+    /* 'devintas devintas dvyliktas trecias ketvirtas'; */
+}
+
+body{
+    background-color: #121212;
+}
